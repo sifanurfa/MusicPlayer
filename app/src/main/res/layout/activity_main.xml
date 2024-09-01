@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="40dp"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/ic_arrowBack"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:src="@drawable/round_arrow_back_ios_24"
+        app:tint="@color/yellow" />
+
+    <TextView
+        android:id="@+id/txt_judulAtas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/yellow"
+        android:text="@string/judul" />
+
+    <ImageView
+        android:id="@+id/ic_more"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/round_more_vert_24"
+        app:tint="@color/yellow" />
+
+    <ImageView
+        android:id="@+id/img_album"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:background="@drawable/rounded"
+        android:layout_below="@id/txt_judulAtas"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/eots"
+        android:scaleType="centerCrop"
+        android:clipToOutline="true"/>
+
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@id/img_album"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:thumbTint="@color/yellow"
+        android:progressTint="@color/yellow"
+        android:progressBackgroundTint="@color/white"
+        android:progress="75" />
+
+    <TextView
+        android:id="@+id/txt_singer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seekbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/grey"
+        android:text="@string/singer" />
+
+    <TextView
+        android:id="@+id/txt_judulBawah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_singer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:textSize="25sp"
+        android:textColor="@color/yellow"
+        android:textStyle="bold"
+        android:text="@string/judul" />
+
+    <ImageView
+        android:id="@+id/ic_circle"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignTop="@+id/ic_play"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/baseline_circle_24"
+        app:tint="@color/white" />
+
+    <ImageView
+        android:id="@+id/ic_play"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/txt_judulBawah"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/round_play_circle_24"
+        app:tint="@color/yellow" />
+
+    <ImageView
+        android:id="@+id/ic_skipPrevious"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignTop="@+id/ic_play"
+        android:layout_marginEnd="80dp"
+        android:layout_alignEnd="@id/ic_play"
+        android:src="@drawable/round_skip_previous_24"
+        app:tint="@color/white" />
+
+    <ImageView
+        android:id="@+id/ic_skipNext"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="80dp"
+        android:layout_alignStart="@id/ic_play"
+        android:layout_alignTop="@id/ic_play"
+        android:src="@drawable/round_skip_next_24"
+        app:tint="@color/white" />
+</RelativeLayout>
